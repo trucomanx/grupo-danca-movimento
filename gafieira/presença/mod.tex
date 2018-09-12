@@ -1,0 +1,60 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage{lscape}
+\usepackage{array}
+\let\belowcaptionskip\abovecaptionskip
+\usepackage{makecell}
+\renewcommand\cellgape{\Gape[4pt]}
+\renewcommand\cellalign{lc}
+
+\begin{document}
+\begin{landscape}
+\begin{table}[!htbp]
+\vspace*{-3cm}\centering
+\caption{Cronograma de Actividades}
+\begin{tabular}{|*{20}{c|}}
+\hline%
+ Objetivos & \makecell{Actividades/Tiempo (meses)} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\ \hline
+ 
+Escoger zonas potenciales  
+ & \makecell{1. Búsqueda de información \\ de mapas de LAI y \\de tipos de cobertura}  & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\cline{ 2- 20}
+ & \makecell{2. Escoger lugares extremos} &  & X & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+ \cline{ 2- 20}
+ & \makecell{3.Escoger zonas intermedias} &  & X & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+ \cline{ 2- 20}
+ & \makecell{4. Seleccionar los mapas \\ a relacionar con \\ las variables atmosféricas} &  &  & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+ \hline
+ 
+ 
+ Definir los transectos  
+ & \makecell{1. Búsqueda de información \\ de DEMs y datos atmosféricos} & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+ \cline{ 2- 20}
+ & \makecell{2. Análizar las variables \\ atmosféricas y las topográficas}  &  & X & X & X &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+ \cline{ 2- 20}
+ & \makecell{3. Establecer los ríos aereos \\ de humedad atmosférica} &  &  &  & X & X & X &  &  &  &  &  &  &  &  &  &  &  &  \\
+ \hline
+ 
+ 
+ Evaluar la influencia 
+ & \makecell{1. Búsqueda de información \\ de evapotranspiración y \\ de temperatura atmosférica }& X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+ \cline{ 2- 20}
+ & \makecell{2. Realizar gráficas de \\ P Vs distancia, P Vs Cobertura, \\ P Vs LAI, P Vs T y P Vs ETP} &  &  &  &  &  & X & X & X & X & X &  &  &  &  &  &  &  &  \\
+ \cline{ 2- 20}
+ & \makecell{3. Explicar mediante principios \\ físicos los resultados obtenidos} &  &  &  &  &  &  &  & X & X & X & X & X &  &  &  &  &  &  \\ \hline
+ 
+ 
+ Otros objetivos 
+ & \makecell{1. Elaboración de informes \\ escritos y artículos}   &  &  &  &  &  &  &  &  &  &  &  & X & X & X & X & X & X & X \\ \cline{ 2- 20}
+ & \makecell{2. Revisión de los resultados \\ obtenidos y ajustes  \\ que sean necesarios} &  &  &  &  &  &  &  &  &  &  &  & X & X & X & X & X &  &  \\
+ \cline{ 2- 20}
+ & \makecell{3. Exposiciones, reuniones \\y discusiones} & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X \\
+ \hline
+\end{tabular}
+\label{actividades}
+\end{table}
+\end{landscape}
+
+\end{document} 
