@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="15cm" height="14cm" viewBox="155 38 282 273" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" cx="300" cy="200" rx="100" ry="100"/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #ff0000" points="300,104 392,164 368,260 228,260 204,200 "/>
+  <g>
+    <ellipse style="fill: #ffffff" cx="298.007" cy="100.874" rx="14.007" ry="12.8736"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="298.007" cy="100.874" rx="14.007" ry="12.8736"/>
+    <text font-size="16.9333" style="fill: #7474dc;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="298.007" y="106.04">
+      <tspan x="298.007" y="106.04">1</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="298.007" cy="296.874" rx="14.007" ry="12.8736"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="298.007" cy="296.874" rx="14.007" ry="12.8736"/>
+    <text font-size="16.9333" style="fill: #7474dc;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="298.007" y="302.04">
+      <tspan x="298.007" y="302.04">5</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="398.007" cy="200.874" rx="14.007" ry="12.8736"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="398.007" cy="200.874" rx="14.007" ry="12.8736"/>
+    <text font-size="16.9333" style="fill: #7474dc;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="398.007" y="206.04">
+      <tspan x="398.007" y="206.04">3</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="198.007" cy="200.874" rx="14.007" ry="12.8736"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="198.007" cy="200.874" rx="14.007" ry="12.8736"/>
+    <text font-size="16.9333" style="fill: #7474dc;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="198.007" y="206.04">
+      <tspan x="198.007" y="206.04">7</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="374.007" cy="132.874" rx="14.007" ry="12.8736"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="374.007" cy="132.874" rx="14.007" ry="12.8736"/>
+    <text font-size="16.9333" style="fill: #7474dc;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="374.007" y="138.04">
+      <tspan x="374.007" y="138.04">2</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #eebfbf" cx="374.007" cy="262.874" rx="14.007" ry="12.8736"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="374.007" cy="262.874" rx="14.007" ry="12.8736"/>
+    <text font-size="16.9333" style="fill: #bfbfbf;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="374.007" y="268.04">
+      <tspan x="374.007" y="268.04">4</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="224.007" cy="262.874" rx="14.007" ry="12.8736"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="224.007" cy="262.874" rx="14.007" ry="12.8736"/>
+    <text font-size="16.9333" style="fill: #7474dc;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="224.007" y="268.04">
+      <tspan x="224.007" y="268.04">6</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="224.007" cy="132.874" rx="14.007" ry="12.8736"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="224.007" cy="132.874" rx="14.007" ry="12.8736"/>
+    <text font-size="16.9333" style="fill: #bfbfbf;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="224.007" y="138.04">
+      <tspan x="224.007" y="138.04">8</tspan>
+    </text>
+  </g>
+  <text font-size="33.8667" style="fill: #ff0000;text-anchor:middle;font-family:Comic Sans MS;font-style:normal;font-weight:700" x="296" y="76">
+    <tspan x="296" y="76">Clave de son 3-2</tspan>
+  </text>
+</svg>

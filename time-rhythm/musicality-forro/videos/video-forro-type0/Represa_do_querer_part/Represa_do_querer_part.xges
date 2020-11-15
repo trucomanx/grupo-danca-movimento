@@ -1,0 +1,183 @@
+<ges version='0.1'>
+  <project properties='properties;' metadatas='metadatas, name=(string)&quot;Novo\ projeto&quot;, author=(string)fernando, render-scale=(double)100, year=(string)2017, format-version=(string)0.1;'>
+    <encoding-profiles>
+      <encoding-profile name='pitivi-profile' description='Perfil de codificação Pitivi' type='container' preset-name='oggmux' format='application/ogg' >
+        <stream-profile parent='pitivi-profile' id='0' type='video' presence='1' format='video/x-theora, framerate=(fraction)[ 1/2147483647, 2147483647/1 ], width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ]' preset-name='theoraenc' restriction='video/x-raw, width=(int)1280, height=(int)720, framerate=(fraction)24000/1001, pixel-aspect-ratio=(fraction)1/1, format=(string)I420' pass='68997456' variableframerate='0' />
+        <stream-profile parent='pitivi-profile' id='1' type='audio' presence='1' format='audio/x-vorbis, rate=(int)[ 1, 200000 ], channels=(int)[ 1, 255 ]' preset-name='vorbisenc' restriction='audio/x-raw, channels=(int)2, rate=(int)44100' />
+      </encoding-profile>
+    </encoding-profiles>
+    <ressources>
+      <asset id='file:///media/fernando/FER8G-BTRFS/desenho/desenho2.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
+      <asset id='file:///media/fernando/FER8G-BTRFS/desenho/Represa_do_querer_part.mp3' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)2, duration=(guint64)12146938775;' metadatas='metadatas, album=(string)&quot;Na\ batida\ da\ Zabumba&quot;, artist=(string)&quot;Trio\ Forrozao&quot;, genre=(string)&quot;Forr\303\263&quot;, title=(string)&quot;Represa\ do\ querer&quot;, container-format=(string)&quot;ID3\ tag&quot;, has-crc=(boolean)false, channel-mode=(string)joint-stereo, audio-codec=(string)&quot;MPEG-1\ Layer\ 3\ \(MP3\)&quot;, bitrate=(uint)200000;' />
+      <asset id='file:///media/fernando/FER8G-BTRFS/desenho/desenho3.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
+      <asset id='file:///media/fernando/FER8G-BTRFS/desenho/desenho4.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
+      <asset id='crossfade' extractable-type-name='GESTransitionClip' properties='properties;' metadatas='metadatas, description=(string)GES_VIDEO_STANDARD_TRANSITION_TYPE_CROSSFADE;' />
+      <asset id='file:///media/fernando/FER8G-BTRFS/desenho/desenho1.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
+    </ressources>
+    <timeline properties='properties, auto-transition=(boolean)true, snapping-distance=(guint64)8140386;' metadatas='metadatas, duration=(guint64)12146938775;'>
+      <track caps='video/x-raw(ANY)' track-type='4' track-id='0' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;video/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;video/x-raw\,\ width\=\(int\)1280\,\ height\=\(int\)720\,\ framerate\=\(fraction\)24000/1001&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
+      <track caps='audio/x-raw(ANY)' track-type='2' track-id='1' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;audio/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;audio/x-raw\,\ format\=\(string\)S32LE\,\ channels\=\(int\)2\,\ rate\=\(int\)44100\,\ layout\=\(string\)interleaved&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
+      <layer priority='0' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1, video::name=(string)&quot;video\ 0&quot;, audio::name=(string)&quot;audio\ 0&quot;;'>
+        <clip id='0' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/Represa_do_querer_part.mp3' type-name='GESUriClip' layer-priority='0' track-types='2' start='0' duration='12146938775' inpoint='0' rate='0' properties='properties, name=(string)uriclip29, mute=(boolean)false, is-image=(boolean)false;' >
+          <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  12146938775:0.10000000000000001 '/>
+          </source>
+        </clip>
+      </layer>
+      <layer priority='1' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1, video::name=(string)&quot;video\ 1&quot;, audio::name=(string)&quot;audio\ 1&quot;;'>
+        <clip id='1' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho4.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='0' duration='586027759' inpoint='0' rate='0' properties='properties, name=(string)uriclip39, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  586027759:1 '/>
+          </source>
+        </clip>
+        <clip id='2' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho1.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='586027759' duration='399806701' inpoint='0' rate='0' properties='properties, name=(string)uriclip49, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  399806701:1 '/>
+          </source>
+        </clip>
+        <clip id='3' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho2.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='985834460' duration='399806701' inpoint='0' rate='0' properties='properties, name=(string)uriclip2, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  399806701:1 '/>
+          </source>
+        </clip>
+        <clip id='4' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho3.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='1385641161' duration='384475214' inpoint='0' rate='0' properties='properties, name=(string)uriclip31, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  384475214:1 '/>
+          </source>
+        </clip>
+        <clip id='5' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho4.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='1770116375' duration='399806701' inpoint='0' rate='0' properties='properties, name=(string)uriclip41, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)0.94943539612368943, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  399806701:0.94614434242248535 '/>
+          </source>
+        </clip>
+        <clip id='6' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho1.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='2169923076' duration='385749803' inpoint='0' rate='0' properties='properties, name=(string)uriclip51, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  385749803:1 '/>
+          </source>
+        </clip>
+        <clip id='7' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho2.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='2555672879' duration='396389886' inpoint='0' rate='0' properties='properties, name=(string)uriclip12, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  396389886:1 '/>
+          </source>
+        </clip>
+        <clip id='8' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho3.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='2952062765' duration='389672285' inpoint='0' rate='0' properties='properties, name=(string)uriclip33, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  389672285:1 '/>
+          </source>
+        </clip>
+        <clip id='9' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho4.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='3341735050' duration='381677621' inpoint='0' rate='0' properties='properties, name=(string)uriclip43, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  381677621:1 '/>
+          </source>
+        </clip>
+        <clip id='10' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho1.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='3723412671' duration='399823579' inpoint='0' rate='0' properties='properties, name=(string)uriclip53, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  399823579:1 '/>
+          </source>
+        </clip>
+        <clip id='11' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho2.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='4123236250' duration='399823579' inpoint='0' rate='0' properties='properties, name=(string)uriclip23, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  399823579:1 '/>
+          </source>
+        </clip>
+        <clip id='12' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho3.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='4523059829' duration='389832020' inpoint='0' rate='0' properties='properties, name=(string)uriclip35, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  389832020:1 '/>
+          </source>
+        </clip>
+        <clip id='13' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho4.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='4912891849' duration='386626625' inpoint='0' rate='0' properties='properties, name=(string)uriclip45, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  386626625:1 '/>
+          </source>
+        </clip>
+        <clip id='14' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho1.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='5299518474' duration='396940673' inpoint='0' rate='0' properties='properties, name=(string)uriclip55, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  396940673:1 '/>
+          </source>
+        </clip>
+        <clip id='15' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho2.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='5696459147' duration='398342582' inpoint='0' rate='0' properties='properties, name=(string)uriclip27, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  398342582:1 '/>
+          </source>
+        </clip>
+        <clip id='16' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho3.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='6094801729' duration='388209585' inpoint='0' rate='0' properties='properties, name=(string)uriclip37, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  388209585:1 '/>
+          </source>
+        </clip>
+        <clip id='17' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho4.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='6483011314' duration='384724656' inpoint='0' rate='0' properties='properties, name=(string)uriclip47, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  384724656:1 '/>
+          </source>
+        </clip>
+        <clip id='18' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho1.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='6867735970' duration='381306814' inpoint='0' rate='0' properties='properties, name=(string)uriclip56, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  381306814:1 '/>
+          </source>
+        </clip>
+        <clip id='19' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho2.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='7249042784' duration='396053485' inpoint='0' rate='0' properties='properties, name=(string)uriclip57, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  396053485:1 '/>
+          </source>
+        </clip>
+        <clip id='20' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho3.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='7645096269' duration='381306814' inpoint='0' rate='0' properties='properties, name=(string)uriclip58, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  381306814:1 '/>
+          </source>
+        </clip>
+        <clip id='21' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho4.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='8026403083' duration='389976817' inpoint='0' rate='0' properties='properties, name=(string)uriclip59, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  389976817:1 '/>
+          </source>
+        </clip>
+        <clip id='22' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho1.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='8416379900' duration='381306814' inpoint='0' rate='0' properties='properties, name=(string)uriclip60, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  381306814:1 '/>
+          </source>
+        </clip>
+        <clip id='23' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho2.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='8797686714' duration='403261594' inpoint='0' rate='0' properties='properties, name=(string)uriclip61, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  403261594:1 '/>
+          </source>
+        </clip>
+        <clip id='24' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho3.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='9200948308' duration='403082322' inpoint='0' rate='0' properties='properties, name=(string)uriclip62, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  403082322:1 '/>
+          </source>
+        </clip>
+        <clip id='25' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho4.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='9604030630' duration='387479455' inpoint='0' rate='0' properties='properties, name=(string)uriclip64, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  387479455:1 '/>
+          </source>
+        </clip>
+        <clip id='26' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho1.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='9991510085' duration='387479455' inpoint='0' rate='0' properties='properties, name=(string)uriclip65, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  387479455:1 '/>
+          </source>
+        </clip>
+        <clip id='27' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho2.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='10378989540' duration='392369548' inpoint='0' rate='0' properties='properties, name=(string)uriclip66, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  392369548:1 '/>
+          </source>
+        </clip>
+        <clip id='28' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho3.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='10771359088' duration='390738540' inpoint='0' rate='0' properties='properties, name=(string)uriclip67, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  390738540:1 '/>
+          </source>
+        </clip>
+        <clip id='29' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho4.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='11162097628' duration='390738540' inpoint='0' rate='0' properties='properties, name=(string)uriclip68, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  390738540:1 '/>
+          </source>
+        </clip>
+        <clip id='30' asset-id='file:///media/fernando/FER8G-BTRFS/desenho/desenho1.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='11552836168' duration='390738540' inpoint='0' rate='0' properties='properties, name=(string)uriclip69, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  390738540:1 '/>
+          </source>
+        </clip>
+      </layer>
+      <groups>
+      </groups>
+    </timeline>
+</project>
+</ges>
